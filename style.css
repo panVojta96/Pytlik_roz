@@ -1,5 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
+    padding: 30px;
+    background-color: rgba(202, 194, 194, 0.425);
+    font-family: "Funnel Sans", sans-serif;
+}
+h1{
+    font-size: 60px;
+    padding: 10px;
 }
