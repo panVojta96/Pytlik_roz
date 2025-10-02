@@ -13,3 +13,31 @@ h1{
     font-size: 60px;
     padding: 10px;
 }
+.menu{
+    display: flex;
+    justify-content: center;
+    gap: 130px;
+    font-size: 40px;
+    padding-top: 55px;
+}
+.sec{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 60px;
+}
+.blok{
+    height: 250px;
+    border: 4px black solid;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgba(179, 170, 170, 0.425) ;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+.blok_h2{
+    margin: 20px;
+    font-size: 30px;
+}
