@@ -4,14 +4,43 @@
     padding: 0;
     box-sizing: border-box;
 }
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);
+}
 body{
     padding: 30px;
     background-color: rgba(202, 194, 194, 0.425);
     font-family: "Funnel Sans", sans-serif;
 }
+.head{
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 70px;
+}
 h1{
     font-size: 60px;
     padding: 10px;
+}
+.f{
+    font-size: 40px; 
+}
+
+.ff:hover{
+    font-size: 75px;
+}
+.f:hover{
+    animation: rot 2s infinite;
+}
+@keyframes rot{
+  50% {transform: rotate(180deg);}
+  100% {transform: rotate(360deg);}
 }
 .menu{
     display: flex;
@@ -19,25 +48,115 @@ h1{
     gap: 130px;
     font-size: 40px;
     padding-top: 55px;
+    border-bottom: 5px black solid;
+    padding-bottom: 30px;
 }
-.sec{
+.sec, .sec2{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 30px;
     margin-top: 60px;
+}
+.sec{
+    display: none;
 }
 .blok{
     height: 250px;
     border: 4px black solid;
     border-radius: 20px;
     padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     background-color: rgba(179, 170, 170, 0.425) ;
     margin-left: 50px;
     margin-right: 50px;
-    
+}
+h3{
+    font-size: 40px;
+    margin-left: 30px;
+}
+p{
+    font-size: 25px;
+    margin-left: 30px;
+}
+button{
+    border: 2px black solid;
+    border-radius: 10px;
+    padding: 7px;
+    font-size: 35px;
+    background-color: rgba(202, 194, 194, 0.425);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+button:hover{
+    text-decoration: underline black;
+    border-radius: 30px;
+}
+.blok:hover{
+    border: 6px black solid;
+        background-color: rgba(20, 18, 18, 0.425) ;
+        color: white;
+        margin: 20px;
 }
 .blok_h2{
     margin: 20px;
-    font-size: 30px;
+    font-size: 45px;
+}
+@media only screen and (max-width: 768px) {
+body{
+    padding: 20px;
+    background-color: rgba(202, 194, 194, 0.425);
+}
+h1{
+    font-size: 40px;
+    padding: 7px;
+}
+.menu{
+    gap: 55px;
+    font-size: 20px;
+    padding-top: 35px;
+    border-bottom: 3px black solid;
+    padding-bottom: 20px;
+}
+.sec, .sec2{
+    margin-top: 40px;
+}
+.blok{
+    height: 125px;
+    border: 2px black solid;
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(179, 170, 170, 0.425) ;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+h3{
+    font-size: 15px;
+    margin-left: 10px;
+}
+p{
+    font-size: 10px;
+    margin-left: 10px;
+}
+button{
+    border: 2px black solid;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 25px;
+    background-color: rgba(202, 194, 194, 0.425);
+}
+.blok:hover{
+    border: 2px black solid;
+}
+.blok_h2{
+    margin: 7px;
+    font-size: 25px;
+}
+.ff:hover{
+    font-size: 50px;
+}
 }
