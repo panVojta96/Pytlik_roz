@@ -21,8 +21,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     flex-direction: column;
-    padding-top: 70px;
+    padding-top: 80px;
+}
+pic{
+    object-fit: cover;
 }
 h1{
     font-size: 60px;
@@ -48,6 +52,7 @@ h1{
 .menu{
     display: flex;
     justify-content: center;
+    align-content: center;
     gap: 130px;
     font-size: 40px;
     padding-top: 55px;
@@ -86,17 +91,19 @@ p{
 button{
     border: 2px black solid;
     border-radius: 10px;
-    padding: 7px;
+    padding: 14px;
     font-size: 35px;
     background-color: rgba(202, 194, 194, 0.425);
+    transition: 0.5s;
 }
 a{
     text-decoration: none;
     color: black;
 }
 button:hover{
-    text-decoration: underline black;
-    border-radius: 30px;
+    border-radius: 40px;
+    transition: 0.5s;
+    cursor: pointer;
 }
 .blok:hover{
     border: 6px black solid;
@@ -158,8 +165,8 @@ button{
     border: 2px black solid;
 }
 .blok_h2{
-    margin: 7px;
-    font-size: 25px;
+    margin: 5px;
+    font-size: 22px;
 }
 .ff:hover{
     font-size: 50px;
