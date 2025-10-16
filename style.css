@@ -25,9 +25,9 @@ body{
     flex-direction: column;
     padding-top: 80px;
 }
-pic{
+/* pic{
     object-fit: cover;
-}
+} */
 h1{
     font-size: 60px;
     padding: 10px;
